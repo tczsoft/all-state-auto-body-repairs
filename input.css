@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-animation {
+    animation: slideIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .background{
+    background: linear-gradient(rgba(0, 0, 0, 0.608),rgba(0, 0, 0, 0.608)),url('./assets/images/services-2.png');
+  }
+  :root{
+    --primary-color: rgb(235,51,0);
+    --secondary-color:#D9D9D9;
+}
+  
