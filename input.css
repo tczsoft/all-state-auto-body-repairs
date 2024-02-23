@@ -17,6 +17,10 @@
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 46% 100%);
 }
 
+.slider-2{
+    clip-path: polygon(46% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
 .services{
     background: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.603)), url('./assets/img/wallpaper/Wall_2.jpg'), no-repeat;
     background-position: center;
@@ -26,7 +30,7 @@
 .text-animation {
     animation: slideIn 1s ease-in-out forwards;
 }
-  
+ 
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -38,6 +42,18 @@
     }
 }
 
+.clip-border{
+    clip-path: polygon(49% 1%, 0% 100%, 100% 100%);
+   /* clip-path: polygon(20% 0, 80% 0, 100% 100%, 0% 100%);*/
+
+}
+
+.will{
+    will-change: transform;
+    transform: perspective(1400px) rotateX(0deg) rotateY(0deg);
+}
+
+
 .background{
-    background: linear-gradient(rgba(0, 0, 0, 0.608),rgba(0, 0, 0, 0.608)),url('./assets/images/services-2.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.708)),url('./assets/images/services-2.png');
 }

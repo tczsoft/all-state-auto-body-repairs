@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>All State Auto Body Repairs | Services</title>
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,16 +37,16 @@
               <div class="hidden w-full lg:block lg:w-auto" id="navbar">
                   <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-white lg:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                       <li>
-                          <a href="index.html" onclick="myFunction()" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
+                          <a href="index.html" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]" >HOME</a>
                       </li>
                       <li>
                           <a href="index.html#about-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
                       </li>
                       <li>
-                          <a href="service.html" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">SERVICES</a>
+                          <a href="service.html" onclick="myFunction()" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500">SERVICES</a>
                       </li>
                       <li>
-                          <a href="#" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
+                          <a href="vehicles.html" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
                       </li>
                       <li>
                           <a href="service.html#contact-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONTACT US</a>
@@ -60,17 +60,15 @@
       </nav>
   </header>
   <main>
-    <section class="bg-gray-900 relative lg:py-32 py-28 sm:py-32 bg-no-repeat text-animation">
-      <div class="max-w-[85rem] mx-auto relative z-10">
-        <div
-          class="text-white lg:text-5xl text-5xl font-extrabold lg:text-left text-center lg:flex lg:flex-col text-animation lg:mt-10 mt-7">
-          Our Services in
-          <span class="text-wrap lg:inline-block">Sacramento, CA</span>
+    <section class="bg-no-repeat text-animation background">
+      <div class="max-w-[85rem] mx-auto px-16 pt-28">
+        <div class="min-h-[30vh] flex items-center">
+          <div>
+            <p class="text-white lg:text-5xl text-4xl font-extrabold lg:text-left text-center lg:flex lg:flex-col text-animation"> Our Services</p>
+            <p class="text-white font-semibold lg:py-7 text-xl flex items-center justify-center md:justify-start"><a href="index.html" class="me-2">Home</a> <i class="fa-solid fa-angles-right"></i> <span class="ms-2 text-primary-color" role="button">Services</span></p>
+          </div>
         </div>
-        <div class="text-white font-semibold lg:py-7">Home / Service Details</div>
       </div>
-      <div class="absolute inset-0 bg-black opacity-100"></div>
-      <div class="absolute inset-0 background bg-center bg-cover bg-no-repeat"></div>
     </section>
 
     <section class="py-14">
@@ -366,7 +364,7 @@
       </div>
     </section>
   </main>
-  <footer class="mt-[60px] lg:mt-[240px] bg-[#242424] relative scroll-mt-24" id="contact-us">
+  <footer class="bg-[#242424] relative scroll-mt-24" id="contact-us">
     <div class="container mx-auto px-4 py-10 z-1 relative">
       <div class="grid grid-cols lg:grid-cols-7 gap-4">
         <div class="lg:col-span-2 text-white text-center md:text-start">
@@ -379,10 +377,10 @@
         </div>
         <div class="text-white text-center md:text-start">
           <p class="text-xl font-bold mb-4">About Company</p>
-          <a class="text-sm mb-4">About Us</a> <br>
-          <a class="text-sm mb-4">Services</a><br>
-          <a class="text-sm mb-4">Vehicle</a><br>
-          <a class="text-sm mb-4">Contact Us</a><br>
+          <a href="index.html#about-us" class="text-sm mb-4">About Us</a> <br>
+          <a href="service.html" class="text-sm mb-4">Services</a><br>
+          <a href="vehicles.html" class="text-sm mb-4">Vehicle</a><br>
+          <a href="service.html#contact-us" class="text-sm mb-4">Contact Us</a><br>
         </div>
         <div class="lg:col-span-2 text-white text-center md:text-start">
           <p class="text-xl font-bold mb-4">Contact Details</p>

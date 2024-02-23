@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All State Auto Body Repairs | Vehicles</title>
+        <link href="./output.css" rel="stylesheet">
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!--Header-->
+        <header class="bg-white fixed z-20 top-0 w-full">
+            <div class="bg-[var(--primary-color)]">
+                <div class="container mx-auto px-4 py-1">
+                    <div class="md:flex block text-center justify-between items-center">
+                        <p class="text-xl font-semibold text-white"><i class="fa-solid fa-phone"></i> 916-450-9838</p>
+                        <p class="text-white text-xs md:text-base"><i class="fa-solid fa-location-dot"></i> 3801 Florin Rd Unit 120C, Sacramento, California 95823</p>
+                    </div>
+                </div>
+            </div>
+      
+            <nav class="border-gray-200 dark:bg-gray-900 relative">
+                <div class="container flex flex-wrap items-center justify-between mx-auto px-4 py-2 z-1 relative">
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="./assets/img/logo/logo.png" class="h-8 lg:h-14" alt="Flowbite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap hidden dark:text-white">Flowbite</span>
+                    </a>
+                    <button onclick="myFunction()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                    <div class="hidden w-full lg:block lg:w-auto" id="navbar">
+                        <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-white lg:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <a href="index.html" onclick="myFunction()" class="block py-2 px-3 text-white bg-white rounded md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
+                            </li>
+                            <li>
+                                <a href="index.html#about-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a href="service.html" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">SERVICES</a>
+                            </li>
+                            <li>
+                                <a href="vehicles.html" onclick="myFunction()" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500">VEHICLES</a>
+                            </li>
+                            <li>
+                                <a href="vehicles.html#contact-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider animate-fade-left animate-duration-[2000ms] bg-secondary-color h-full w-full top-0 z-[-1] absolute lg:block hidden"> </div>
+            </nav>
+        </header>
+
+        <!--Main-->
+        <main>
+            <section class="bg-no-repeat text-animation background">
+                <div class="max-w-[85rem] mx-auto px-16 pt-28">
+                    <div class="min-h-[30vh] flex items-center">
+                        <div>
+                            <p class="text-white lg:text-5xl text-4xl font-extrabold lg:text-left text-center lg:flex lg:flex-col text-animation"> Vehicles We Service</p>
+                            <p class="text-white font-semibold lg:py-7 text-xl flex items-center justify-center md:justify-start"><a href="index.html" class="me-2">Home</a> <i class="fa-solid fa-angles-right"></i> <span class="ms-2 text-primary-color" role="button">Vehicles</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relative py-20 bg-[url('/assets/img/wallpaper/Wall_4.png')] bg-contain bg-no-repeat bg-fixed overflow-hidden">
+                <div class="max-w-[110rem] w-full mx-auto px-4 lg:px-6">
+                    <div>
+                        <p class="text-3xl font-thin">Servicing 2000 and Newer Vehicles</p>
+                        <p class="text-3xl ">Vehicles We Service</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 py-5  animate-fade-up animate-duration-[2000ms]">
+
+                        <!--0-->
+                        <div class="rounded overflow-hidden shadow-lg relative group delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/34.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Tesla</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--1-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/33.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Acura</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--2-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/32.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Buick</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--3-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/31.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-1000 bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Cadillac</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--4-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/30.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Chevrolet</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--5-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/29.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Chrysler</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--5-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/28.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Cummins</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--6-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/27.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Dodge</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--7-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/26.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Duramax</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--8-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/25.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Ford</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--9-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/24.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">GM</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                        
+                        <!--10-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/23.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">GMC</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                
+                        <!--11-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/22.jpg" alt="">
+
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Honda</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                
+                        <!--12-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/21.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">HUMMER</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                
+                        <!--13-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/20.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Hyundai</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                
+                        <!--14-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/19.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Infiniti</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                
+                        <!--15-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/18.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Isuzu</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                             
+                        <!--16-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/17.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Isuzu Truck</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                            
+                        <!--17-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/35.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Jeep</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                
+                        <!--18-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/16.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Kia</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                
+                        <!--19-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/15.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Lexus</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--20-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/14.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Lincoln</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--21-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/13.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Mazda</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--22-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/12.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Mercury</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--23-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/11.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Mitsubishi</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--24-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/10.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Nissan</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--25-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/9.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Plymouth</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--26-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/8.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Pontiac</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--27-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/7.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Power Stroke</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--28-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/6.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">RAM</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                                                                        
+                        <!--29-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/5.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Saturn</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--30-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/4.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Scion</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--31-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/3.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Subaru</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--32-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/2.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Suzuki</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+
+                        <!--33-->
+                        <div class="rounded overflow-hidden shadow-lg relative group">
+                            <img class="object-cover rounded-lg relative z-2" src="./assets/img/vehicles/1.jpg" alt="">
+                            <div class="w-full h-[25%] bottom-0 absolute hidden z-[3] group-hover:block">
+                                <div class="flex flex-col justify-center h-full items-center animate-fade-up animate-duration-[2000ms] bg-black border-t-4 border-primary-color clip-border">
+                                    <div class="text-white text-xl">Toyota</div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/pattern/shape-1-red.png" class="w-[25%] left-[36%] animate-spin animate-once animate-duration-[3000ms] animate-ease-in-out z-[1] bottom-0 absolute hidden group-hover:block" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <img src="./assets/img/pattern/shape-1.png" class="w-[150px] absolute right-0 top-0 animate-spin animate-duration-[3000ms]" alt="">
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer class="bg-[#242424] relative scroll-mt-24" id="contact-us">
+            <div class="container mx-auto px-4 py-10 z-1 relative">
+                <div class="grid grid-cols lg:grid-cols-7 gap-4">
+                    <div class="lg:col-span-2 text-white text-center md:text-start">
+                        <p class="text-xl font-bold mb-4">About Company</p>
+                        <p class="text-sm mb-4">We have over 10 years of experience helping customers with car servicing.</p>
+                        <p class="text-sm font-bold mb-3">WE ARE AVAILABLE</p>
+                        <p class="text-sm mb-3">Mon-Sat: 09.00 am to 6.30 pm</p>
+                        <button class="bg-[var(--primary-color)] rounded-xl px-3 py-1 text-sm font-semibold">Contact Us</button>
+    
+                    </div>
+                    <div class="text-white text-center md:text-start">
+                        <p class="text-xl font-bold mb-4">About Company</p>
+                        <a href="index.html#about-us" class="text-sm mb-4">About Us</a> <br>
+                        <a href="service.html" class="text-sm mb-4">Services</a><br>
+                        <a href="vehicles.html" class="text-sm mb-4">Vehicle</a><br>
+                        <a href="vehicles.html#contact-us" class="text-sm mb-4">Contact Us</a><br>
+                    </div>
+                    <div class="lg:col-span-2 text-white text-center md:text-start">
+                        <p class="text-xl font-bold mb-4">Contact Details</p>
+                        <p class="text-sm font-bold mb-3">PHONE NUMBER</p>
+                            <p class="ms-4 text-[20px] mb-3"><i class="fa-solid fa-square-phone-flip fa-rotate-90 text-[var(--primary-color)] mb-0 me-2"></i> <span class=" text-sm">916-450-9838</span></p>
+                        <p class="text-sm font-bold mb-3">EMAIL ADDRESS</p>
+                            <p class="ms-4 text-[20px] mb-3"><i class="fa-solid fa-envelope text-[var(--primary-color)] mb-0 me-2"></i> <span class=" text-sm">allstate6520@gmail.com</span></p>
+                        <p class="text-sm font-bold mb-3">OFFICE LOCATION</p>
+                            <p class="ms-4 text-[20px] mb-3"><i class="fa-solid fa-location-dot text-[var(--primary-color)] mb-0 me-2"></i> <span class=" text-sm">3801 Florin Rd Unit 120C, Sacramento, California 95823</span></p>
+                    </div>
+    
+                    <div class="lg:col-span-2 text-center md:text-start">
+                        <div class="flex justify-center lg:justify-start">
+                            <img src="./assets/img/gallery/2.jpg" class="w-[80%] rounded-md" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div>
+                <img src="./assets/img/pattern/2.png" class="absolute top-0 z-0" alt="">
+            </div>
+            <hr>
+            <div class="container mx-auto px-4">
+                <div class="py-3 md:flex md:justify-between">
+                    <div class="flex justify-center md:block">
+                        <img src="./assets/img/logo/logo.png" class="w-[180px]" alt="">
+                    </div>
+                    <p class="text-white text-center md:text-start">Copyright  2024. All Rights Reserved.</p>
+                </div>
+            </div>
+       </footer>
+    </body>
+
+    <script src="./assets/JS/fuction.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+</html>

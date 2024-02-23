@@ -37,7 +37,7 @@
                 <div class="hidden w-full lg:block lg:w-auto" id="navbar">
                     <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-white lg:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#" onclick="myFunction()" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
+                            <a href="" onclick="myFunction()" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-primary-color md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
                         </li>
                         <li>
                             <a href="#about-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
@@ -46,7 +46,7 @@
                             <a href="service.html" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">SERVICES</a>
                         </li>
                         <li>
-                            <a href="#" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
+                            <a href="vehicles.html" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
                         </li>
                         <li>
                             <a href="#contact-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONTACT US</a>
@@ -92,22 +92,26 @@
             </div>
         </section>
 
-        <section class="bg-[var(--secondary-color)] py-20">
-            <div class="max-w-[110rem] w-full mx-auto px-4 lg:px-6 relative z-[1]">
+        <section class="bg-white py-20 relative">
+            <div class="max-w-[110rem] w-full mx-auto px-4 lg:px-6 relative z-[2]">
                 <div class="grid gap-12 grid-cols-1 md:grid-cols-2 justify-items-center items-center">
-                    <div class="text-center">
-                        <p class="text-4xl font-bold text-[var(--primary-color)]">10% off!</p>
-                        <p class="text-xl">on your first selected repairs</p>
-                        <p class="text-4xl font-bold text-[var(--primary-color)]">20% off!</p>
-                        <p class="text-xl">on your first body repairs</p>
-                    </div>
                     <div>
                         <div class="flex items-center"><p class="text-6xl font-bold text-[var(--primary-color)] me-2">36,000</p>Month <br> K MILE</div>
-                        <p class="text-4xl font-bold text-[var(--primary-color)]">WARRANTY</p> 
+                        <p class="text-4xl font-bold text-primary-color">WARRANTY</p> 
                         <p class="text-xl">ON MOST REPAIRS</p>
                     </div>
+
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-primary-color">10% off!</p>
+                        <p class="text-xl">on your first selected repairs</p>
+                        <p class="text-4xl font-bold  text-primary-color">20% off!</p>
+                        <p class="text-xl">on your first body repairs</p>
+                    </div>
+
                 </div>
             </div>
+
+            <div class="slider-2 animate-fade-left animate-duration-[2000ms] bg-secondary-color h-full w-full top-0 z-[1] absolute lg:block hidden"> </div>
         </section>
 
         <section class="bg-[var(--primary-color)] pt-20 pb-20 lg:pb-48 relative scroll-mt-24" id="about-us">
@@ -117,7 +121,7 @@
 
                     <div class="text-white px-3 lg:px-8">
                         <div class="text-center">
-                            <p class="text-2xl font-semibold text-white mb-5">ABOUT US</p>
+                            <p class="text-4xl font-bold text-white mb-5">ABOUT US</p>
                         </div>
                         <p class="text-xl italic">Welcome to</p>
                         <p class="text-3xl font-semibold">ALL STATE AUTO BODY REPAIRS</p>
@@ -139,19 +143,22 @@
             </div>
         </section>
 
-        <section class="bg-white py-20">
-            <div class="max-w-[110rem] w-full mx-auto px-4 lg:px-6">
-                <div class="flex justify-center mb-5">
+        <section class=" py-20">
+            <div class="max-w-[90rem] w-full mx-auto px-4 lg:px-6">
+                <div class="flex justify-center mb-8">
                     <div>
                         <p class="text-xl italic">Why choose</p>
                         <p class="text-3xl font-semibold">ALL STATE AUTO BODY REPAIRS?</p>
                     </div>
                 </div>
                 <div class="grid gap-12 grid-cols md:grid-cols-2 justify-items-stretch items-center">
-                    <div class=" ">
-                        <img src="./assets/img/gallery/2.jpg" class="w-full lg:w-[75%] rounded-2xl outline outline-offset-2 outline-2 outline-[var(--primary-color)]" alt="">
+                    <div class="flex justify-center relative">
+                        <img src="./assets/img/gallery/2.jpg" class="w-full will lg:w-[65%] rounded-ss-2xl rounded-br-2xl outline outline-offset-2 outline-2 outline-[var(--primary-color)]" alt="">
+                        <div class="absolute bottom-0 left-0 z-[-1]">
+                            <img src="./assets/img/pattern/8.png" class="w-[80%]" alt="">
+                        </div>
                     </div>
-                    <div class="justify-self-center">
+                    <div class="justify-self-center md:justify-self-start">
                         <div class="flex items-center mb-8">
                             <img src="./assets/img/pattern/c3.png" class="w-[60px] me-4" alt="">
                             <p class="text-xl">3 YEAR/36,000 MILE WARRANTY</p>
@@ -165,6 +172,7 @@
                             <p class="text-xl">COUNTLESS 5-STAR REVIEWS</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -241,7 +249,7 @@
             <img src="./assets/img/pattern/car.png" class="absolute top-[-25px] lg:top-[-100px]" alt="">
         </section>
    </main>
-   <footer class="mt-[60px] lg:mt-[240px] bg-[#242424] relative scroll-mt-24" id="contact-us">
+    <footer class="mt-[60px] lg:mt-[240px] bg-[#242424] relative scroll-mt-24" id="contact-us">
         <div class="container mx-auto px-4 py-10 z-1 relative">
             <div class="grid grid-cols lg:grid-cols-7 gap-4">
                 <div class="lg:col-span-2 text-white text-center md:text-start">
@@ -254,10 +262,10 @@
                 </div>
                 <div class="text-white text-center md:text-start">
                     <p class="text-xl font-bold mb-4">About Company</p>
-                    <a class="text-sm mb-4">About Us</a> <br>
-                    <a class="text-sm mb-4">Services</a><br>
-                    <a class="text-sm mb-4">Vehicle</a><br>
-                    <a class="text-sm mb-4">Contact Us</a><br>
+                    <a href="index.html#about-us" class="text-sm mb-4">About Us</a> <br>
+                    <a href="service.html" class="text-sm mb-4">Services</a><br>
+                    <a href="vehicles.html" class="text-sm mb-4">Vehicle</a><br>
+                    <a href="index.html#contact-us" class="text-sm mb-4">Contact Us</a><br>
                 </div>
                 <div class="lg:col-span-2 text-white text-center md:text-start">
                     <p class="text-xl font-bold mb-4">Contact Details</p>
@@ -290,7 +298,7 @@
                 <p class="text-white text-center md:text-start">Copyright  2024. All Rights Reserved.</p>
             </div>
         </div>
-   </footer>
+    </footer>
 </body>
 <script src="./vendor/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </html>
