@@ -30,16 +30,70 @@
 .text-animation {
     animation: slideIn 1s ease-in-out forwards;
 }
- 
+  
+  
 @keyframes slideIn {
     from {
-        opacity: 0;
-        transform: translateY(-20px);
+      opacity: 0;
+      transform: translateY(-20px);
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
+}
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.608),rgba(0, 0, 0, 0.608)),url('./assets/images/services-2.png');
+}
+  
+  
+  .rotate {
+    animation: rotation 12s linear infinite;
+  }
+  
+  .linear {
+    animation-timing-function: linear;
+  }
+  
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  .slidedesign{
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+  }
+  
+  
+.image {
+    position: absolute;
+    -webkit-animation:spin 12s linear infinite;
+    -moz-animation:spin 12s linear infinite;
+    animation:spin 12s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
 
 .clip-border{
@@ -48,10 +102,6 @@
 
 }
 
-.will{
-    will-change: transform;
-    transform: perspective(1400px) rotateX(0deg) rotateY(0deg);
-}
 
 
 .background{
