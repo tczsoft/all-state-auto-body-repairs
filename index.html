@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All State Auto Body Repairs</title>
     <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link href="./vendor/@flaticon/flaticon-uicons/css/all/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +25,7 @@
         <nav class="border-gray-200 dark:bg-gray-900 relative">
             <div class="container flex flex-wrap items-center justify-between mx-auto px-4 py-2 z-1 relative">
                 <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="./assets/img/logo/logo.png" class="h-14" alt="Flowbite Logo" />
+                    <img src="./assets/img/logo/logo.png" class="h-8 lg:h-14" alt="Flowbite Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap hidden dark:text-white">Flowbite</span>
                 </a>
                 <button onclick="myFunction()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -35,13 +34,13 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                     </svg>
                 </button>
-                <div class="hidden w-full md:block md:w-auto " id="navbar">
+                <div class="hidden w-full md:block md:w-auto" id="navbar">
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white lg:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
                             <a href="#" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
+                            <a href="#about-us" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
                         </li>
                         <li>
                             <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">SERVICES</a>
@@ -50,7 +49,7 @@
                             <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONSTACT US</a>
+                            <a href="#contact-us" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONSTACT US</a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +60,7 @@
         </nav>
    </header>
    <main>
-        <section id="hero-section" class="relative overflow-hidden">
+        <section id="hero-section" class="relative overflow-hidden hero-section">
             <div class="max-w-[110rem] w-full mx-auto px-4 lg:px-6 relative z-[1]">
                 <div class="grid gap-12 grid-cols min-h-[100vh] justify-items-center items-center">
                     <div class="text-center text-white">
@@ -76,7 +75,7 @@
                 <img src="./assets/img/pattern/4.png" class="w-[80px] animate-shake animate-infinite animate-duration-[6000ms]" alt="">
             </div>
 
-            <div class="absolute z-[-0]  bottom-[-30%] md:bottom-[-15%] left-16">
+            <div class="absolute z-[-0]  bottom-[-30%] md:bottom-[25%] left-16">
                 <img src="./assets/img/pattern/5.png" class="w-[20px] animate-shake animate-infinite animate-duration-[6000ms]" alt="">
             </div>
 
@@ -109,7 +108,7 @@
             </div>
         </section>
 
-        <section class="bg-[var(--primary-color)] py-20">
+        <section class="bg-[var(--primary-color)] pt-20 pb-48 relative scroll-mt-24" id="about-us">
             <div class="w-full mx-auto px-4 lg:px-0 relative z-[1]">
 
                 <div class="grid gap-6 grid-cols md:grid-cols-2 justify-items-center items-center">
@@ -132,6 +131,9 @@
                         <img src="./assets/img/gallery/1.jpg" class="rounded-s-full" alt="">
                     </div>
                 </div>
+            </div>
+            <div class="absolute bottom-0 left-0">
+                <img src="./assets/img/pattern/bg_1.png" class="w-full" alt="">
             </div>
         </section>
 
@@ -165,7 +167,11 @@
             </div>
         </section>
 
-        <section class="bg-white py-36" id="services">
+        <section class="bg-white py-36 relative services" id="services">
+            <div class="absolute top-0 left-0">
+                <img src="./assets/img/pattern/bg.png" class="w-full" alt="">
+            </div>
+
             <div class="max-w-[110rem] w-full mx-auto px-4 lg:px-8">
                 <div class="flex justify-center mb-12">
                     <div class="text-white">
@@ -233,10 +239,10 @@
             <img src="./assets/img/pattern/car.png" class="absolute top-[-25px] lg:top-[-100px]" alt="">
         </section>
    </main>
-   <footer class="mt-[60px] lg:mt-[240px] bg-[#242424]">
-        <div class="container mx-auto px-4 py-10">
-            <div class="grid grid-cols-7 gap-4">
-                <div class="col-span-2 text-white">
+   <footer class="mt-[60px] lg:mt-[240px] bg-[#242424] relative scroll-mt-24" id="contact-us">
+        <div class="container mx-auto px-4 py-10 z-1 relative">
+            <div class="grid grid-cols lg:grid-cols-7 gap-4">
+                <div class="col-span-2 text-white text-center md:text-start">
                     <p class="text-xl font-bold mb-4">About Company</p>
                     <p class="text-sm mb-4">We have over 10 years of experience helping customers with car servicing.</p>
                     <p class="text-sm font-bold mb-3">WE ARE AVAILABLE</p>
@@ -244,16 +250,14 @@
                     <button class="bg-[var(--primary-color)] rounded-xl px-3 py-1 text-sm font-semibold">Contact Us</button>
 
                 </div>
-                <div class="text-white">
+                <div class="text-white text-center md:text-start">
                     <p class="text-xl font-bold mb-4">About Company</p>
-                    <ul class="list-none">
-                        <li><a class="text-sm mb-4">About Us</a></li>
-                        <li><a class="text-sm mb-4">Services</a></li>
-                        <li><a class="text-sm mb-4">Vehicle</a></li>
-                        <li><a class="text-sm mb-4">Contact Us</a></li>
-                    </ul>
+                    <a class="text-sm mb-4">About Us</a> <br>
+                    <a class="text-sm mb-4">Services</a><br>
+                    <a class="text-sm mb-4">Vehicle</a><br>
+                    <a class="text-sm mb-4">Contact Us</a><br>
                 </div>
-                <div class="col-span-2 text-white">
+                <div class="col-span-2 text-white text-center md:text-start">
                     <p class="text-xl font-bold mb-4">Contact Details</p>
                     <p class="text-sm font-bold mb-3">PHONE NUMBER</p>
                         <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-square-phone-hangup text-[var(--primary-color)] me-2"></i> <span>916-450-9838</span></p>
@@ -263,11 +267,15 @@
                         <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-marker text-[var(--primary-color)] me-2"></i> <span>3801 Florin Rd Unit 120C, Sacramento, California 95823</span></p>
                 </div>
 
-                <div class="col-span-2">
+                <div class="col-span-2 text-center md:text-start">
                     <img src="./assets/img/gallery/2.jpg" class="w-[80%] rounded-md" alt="">
                 </div>
             </div>
 
+        </div>
+
+        <div>
+            <img src="./assets/img/pattern/2.png" class="absolute top-0 z-0" alt="">
         </div>
         <hr>
         <div class="container mx-auto px-4">
