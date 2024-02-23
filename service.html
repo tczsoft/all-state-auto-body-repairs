@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="bg-white fixed z-20 top-0 w-full">
+      <div class="bg-[var(--primary-color)]">
+          <div class="container mx-auto px-4 py-1">
+              <div class="md:flex block text-center justify-between items-center">
+                  <p class="text-xl font-semibold text-white"><i class="fi fi-ss-phone-call"></i> 916-450-9838</p>
+                  <p class="text-white text-xs md:text-base"><i class="fi fi-sr-marker"></i> 3801 Florin Rd Unit 120C, Sacramento, California 95823</p>
+              </div>
+          </div>
+      </div>
+
+      <nav class="border-gray-200 dark:bg-gray-900 relative">
+          <div class="container flex flex-wrap items-center justify-between mx-auto px-4 py-2 z-1 relative">
+              <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <img src="./assets/img/logo/logo.png" class="h-8 lg:h-14" alt="Flowbite Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap hidden dark:text-white">Flowbite</span>
+              </a>
+              <button onclick="myFunction()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar">
+                  <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white lg:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                      <li>
+                          <a href="index.html" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
+                      </li>
+                      <li>
+                          <a href="index.html#about-us" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
+                      </li>
+                      <li>
+                          <a href="service.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">SERVICES</a>
+                      </li>
+                      <li>
+                          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
+                      </li>
+                      <li>
+                          <a href="index.html#contact-us" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONSTACT US</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="slider animate-fade-left animate-duration-[2000ms] bg-[var(--secondary-color)] h-full w-full top-0 z-[-1] absolute lg:block hidden">
+          </div>
+      </nav>
+  </header>
+  <main>
+    <section class="bg-gray-900 relative lg:py-32 py-28 sm:py-32 bg-no-repeat text-animation">
+      <div class="max-w-[85rem] mx-auto relative z-10">
+        <div
+          class="text-white lg:text-5xl text-5xl font-extrabold lg:text-left text-center lg:flex lg:flex-col text-animation lg:mt-10 mt-7">
+          Our Services in
+          <span class="text-wrap lg:inline-block">Sacramento, CA</span>
+        </div>
+        <div class="text-white font-semibold lg:py-7">Home / Service Details</div>
+      </div>
+      <div class="absolute inset-0 bg-black opacity-100"></div>
+      <div class="absolute inset-0 background bg-center bg-cover bg-no-repeat"></div>
+    </section>
+
+    <section class="py-14">
+      <div class="max-w-[90rem] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+          <div class="col-span-3">
+            <div class="text-black  font-bold  bg-red-50 p-5 rounded-lg text-animation  hidden md:block ">
+              Our All Services
+              <ul class="pl-2 mt-5 font-semibold cursor-pointer">
+                <li
+                  class="service-item transition-transform duration-800 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2  border-b-2"
+                  data-target="acservice-content"> <i class="fa-solid fa-temperature-arrow-down mr-10"></i></i>A/C</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="autorepair-content"> <i class="fa-solid fa-wrench mr-10"></i>Auto Repair</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="brakes-content"> <i class="fa-solid fa-gear mr-10"></i>Brakes</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="diagonostic-content"> <i class="fa-regular fa-newspaper mr-10"></i>Diagnostics</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="dieselservice-content"> <i class="fa-solid fa-gas-pump mr-10"></i>Diesel Service</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="drivability-content"><i class="fa-solid fa-car mr-10"></i>Drivability</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="Electrical-content"> <i class="fa-solid fa-car-battery mr-10"></i></i>Electrical</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="Electronics-content"> <i class="fa-solid fa-plug-circle-bolt mr-10"></i>Electronics</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="emissions-content"> <i class="fa-solid fa-filter mr-10"></i>Emissions</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="interior-content"> <i class="fa-brands fa-steam mr-10"></i>Exterior/Interior</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="fleet-content"> <i class="fa-solid fa-taxi mr-10"></i>Fleet Service</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="maintenance-content"> <i class="fa-solid fa-screwdriver-wrench mr-10"></i>Maintenance
+                </li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="Inspection-content"> <i class="fa-solid fa-vial-circle-check mr-10"></i>Tests/Inspections
+                </li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="Tires-content"> <i class="fa-solid fa-drum-steelpan mr-10"></i>Tires / Wheels</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="Transmission-content"> <i class="fa-solid fa-gears mr-10"></i>Transmission Repair and
+                  Service</li>
+                <li
+                  class="service-item transition-transform duration-600 hover:transform hover:scale-x-105 hover:bg-red-500 hover:text-white hover:shadow-lg p-2 border-b-2"
+                  data-target="Underhood-content"> <i class="fa-solid fa-toolbox mr-10"></i>Underhood</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-span-9">
+            <div class=" text-animation text-lg">
+              <div class="" id="acservice-content">
+                <img src="./assets/images/car-ac.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4 space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Air Conditioning</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Air Conditioning Evacuate/Recharge Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Heating and Air Conditioning Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Now Servicing 1234yf Systems!</li>
+                </ul>
+              </div>
+              <div id="autorepair-content" class="hidden">
+                <img src="./assets/images/auto-repair.jpg" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4 space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Imported Japanese Engine Repairs</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>SUV Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Truck Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Van Repair</li>
+                </ul>
+              </div>
+
+              <div id="brakes-content" class="hidden ">
+                <img src="./assets/images/brakes.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Anti-Lock Brake Service and Diagnostics</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Brake Service and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Brake Fluid Exchange</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Brake Pads Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Brake Rotors Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Resurface Rotors</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Drum and Rotor Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>ABS System Service and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Hydraulic System Diagnosis and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Brake Inspection</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Brake Line and Hose Replacement</li>
+                </ul>
+              </div>
+              <div id="diagonostic-content" class="hidden">
+                <img src="./assets/images/diagonostic.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Check Engine Light Diagnostics</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Computer Diagnostics (Check Engine Light, Air
+                    Bag Light, etc.)</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>TPMS System Testing</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Electrical and/or Wiring Problems</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Overheating Diagnostics</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Warning Light Diagnostics</li>
+                </ul>
+              </div>
+              <div id="dieselservice-content" class="hidden">
+                <img src="./assets/images/diesel-service.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Diesel Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Diesel Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Diesel Maintenance</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Diesel Fuel Injection Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Diesel Glow Plug Replacement</li>
+                </ul>
+              </div>
+              <div id="drivability-content" class="hidden">
+                <img src="./assets/images/drivability.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Differential and Transfer Case (4WD) Service
+                  </li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Drive Train Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>CV Joint Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>CV Boot Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Driveshaft Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Driveability Issues</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Fuel Pump Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Fuel System Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Run-ability Issues</li>
+                </ul>
+              </div>
+              <div id="Electrical-content" class="hidden">
+                <img src="./assets/images/electrical.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Battery / Charging Repair and Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Battery System Testing</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Electrical and Computer Diagnosis</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>No-Start Diagnostics / Driveability Diagnostics
+                  </li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Electrical System Diagnosis and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Electrical and/or Wiring Problems</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Hybrid Repair and Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Program Smart Keys and Keyless Entry Remote
+                  </li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Starting / Charging Diagnosis and Repair</li>
+                </ul>
+              </div>
+              <div id="Electronics-content" class="hidden">
+                <img src="./assets/images/electronics.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Airbag and SRS Systems</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Check Engine Light Diagnostics</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Electronic Reprogramming</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Computer Reprogramming</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Computer Reflashing with Factory Diagnostic
+                    Equipment</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Full Engine Electronics Factory Software</li>
+                </ul>
+              </div>
+              <div id="emissions-content" class="hidden">
+                <img src="./assets/images/emission.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Emissions Repair Facility</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>EVAP System Service and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Oxygen Sensor Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Exhaust System Work</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Catalytic Converter Emissions</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Muffler Work</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Oxygen Sensor Replacement</li>
+                </ul>
+              </div>
+              <div id="interior-content" class="hidden">
+                <img src="./assets/images/interior-exterior.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Head Light Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Headlight Restoration</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Interior / Exterior Lighting Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Windshield Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Power Window and Door Lock Diagnosis and Repair
+                  </li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Tail Light Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Wiper Blade Replacement</li>
+                </ul>
+              </div>
+              <div id="fleet-content" class="hidden">
+                <img src="./assets/images/fleet.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Fleet Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Fleet Account Work</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Fleet Inspection</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Fleet Lighting Service</li>
+                </ul>
+              </div>
+              <div id="maintenance-content" class="hidden">
+                <img src="./assets/images/maintenance.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Factory Scheduled Maintenance</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Oil, Lube, and Filter Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Preventative Maintenance</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Preventative Maintenance Inspections</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Preventative Maintenance and Fluid Services
+                  </li>
+                </ul>
+              </div>
+              <div id="Inspection-content" class="hidden">
+                <img src="./assets/images/inspection.jpg" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Pre-Purchase Inspection</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Smog Test and Repair</li>
+                </ul>
+              </div>
+              <div id="Tires-content" class="hidden">
+                <img src="./assets/images/tyres.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Alignment Services</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>TPMS System Testing</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Mechanical and Suspension Repairs</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Rotation and Check Tire Pressure</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Suspension (includes struts, shocks, axles,
+                    control arm replacement)</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Shocks and Struts Work</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Axle and Control Arm Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>CV/Axle and Control Arm Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Bushing Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Tire Pressure Monitoring Systems</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Tire Repairs</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Tire Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Tire Sales</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Wheel Balancing and Alignments</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Wheel Balancing</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Mounting and Computer Balancing</li>
+                </ul>
+              </div>
+              <div id="Transmission-content" class="hidden">
+                <img src="./assets/images/transmission.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Clutch Repairs and Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Transmission Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Transmission Fluid Exchange Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Transmission Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Manual Transmission Service and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Automatic Transmission Service and Repair</li>
+                </ul>
+              </div>
+              <div id="Underhood-content" class="hidden">
+                <img src="./assets/images/underhood.png" alt="" class="lg:w-full lg:h-[500px]">
+                <ul class="p-4   space-y-3 grid grid-cols-2">
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Air Intake Cleaning and Filter Changing</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Alternator Testing and Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Alternator Testing and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Belt and Hoses Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Clutch Repairs and Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Cooling System Service (Water Pumps, Radiators,
+                    etc.)</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Coolant Exchange Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Diesel Service and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Diesel Maintenance</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Diesel Fuel Injection Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Diesel Glow Plug Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Engine Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Engine Head Gasket Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Fuel Injection Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Fuel Injection Cleaning and Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Power Steering</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Power Steering Fluid Exchange Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Power Steering Rack and Pinion Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Replace and Service Transmission</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Steering and Suspension Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Steering Rack Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Tie Rod Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Timing Belt and Water Pump Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Timing Belt and Drive Belt Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Timing Chain Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Water Pump Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Water Pump, Thermostat Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Transmission Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Transmission Fluid Exchange Service</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Transmission Replacement</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Manual Transmission Service and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Automatic Transmission Service and Repair</li>
+                  <li><i class="fa-regular fa-hand-point-right mr-7"></i>Tune Ups, Air Filters, Fuel Filters</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mt-[60px] lg:mt-[240px] bg-[#242424] relative scroll-mt-24" id="contact-us">
+      <div class="container mx-auto px-4 py-10 z-1 relative">
+          <div class="grid grid-cols lg:grid-cols-7 gap-4">
+              <div class="col-span-2 text-white text-center md:text-start">
+                  <p class="text-xl font-bold mb-4">About Company</p>
+                  <p class="text-sm mb-4">We have over 10 years of experience helping customers with car servicing.</p>
+                  <p class="text-sm font-bold mb-3">WE ARE AVAILABLE</p>
+                  <p class="text-sm mb-3">Mon-Sat: 09.00 am to 6.30 pm</p>
+                  <button class="bg-[var(--primary-color)] rounded-xl px-3 py-1 text-sm font-semibold">Contact Us</button>
+
+              </div>
+              <div class="text-white text-center md:text-start">
+                  <p class="text-xl font-bold mb-4">About Company</p>
+                  <a class="text-sm mb-4">About Us</a> <br>
+                  <a class="text-sm mb-4">Services</a><br>
+                  <a class="text-sm mb-4">Vehicle</a><br>
+                  <a class="text-sm mb-4">Contact Us</a><br>
+              </div>
+              <div class="col-span-2 text-white text-center md:text-start">
+                  <p class="text-xl font-bold mb-4">Contact Details</p>
+                  <p class="text-sm font-bold mb-3">PHONE NUMBER</p>
+                      <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-square-phone-hangup text-[var(--primary-color)] me-2"></i> <span>916-450-9838</span></p>
+                  <p class="text-sm font-bold mb-3">EMAIL ADDRESS</p>
+                      <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-envelope text-[var(--primary-color)] me-2"></i> <span>916-450-9838</span></p>
+                  <p class="text-sm font-bold mb-3">OFFICE LOCATION</p>
+                      <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-marker text-[var(--primary-color)] me-2"></i> <span>3801 Florin Rd Unit 120C, Sacramento, California 95823</span></p>
+              </div>
+
+              <div class="col-span-2 text-center md:text-start">
+                  <img src="./assets/img/gallery/2.jpg" class="w-[80%] rounded-md" alt="">
+              </div>
+          </div>
+
+      </div>
+
+      <div>
+          <img src="./assets/img/pattern/2.png" class="absolute top-0 z-0" alt="">
+      </div>
+      <hr>
+      <div class="container mx-auto px-4">
+          <div class="py-3 md:flex md:justify-between items-center">
+              <img src="./assets/img/logo/logo.png" class="w-[180px]" alt="">
+              <p class="text-white">Copyright  2024. All Rights Reserved.</p>
+          </div>
+      </div>
+  </footer>
+  <script src="./assets/JS/script.js"></script>
+  <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+</body>
+
+</html>
