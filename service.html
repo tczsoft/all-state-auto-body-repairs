@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +16,8 @@
       <div class="bg-[var(--primary-color)]">
           <div class="container mx-auto px-4 py-1">
               <div class="md:flex block text-center justify-between items-center">
-                  <p class="text-xl font-semibold text-white"><i class="fi fi-ss-phone-call"></i> 916-450-9838</p>
-                  <p class="text-white text-xs md:text-base"><i class="fi fi-sr-marker"></i> 3801 Florin Rd Unit 120C, Sacramento, California 95823</p>
+                  <p class="text-xl font-semibold text-white"><i class="fa-solid fa-phone"></i> 916-450-9838</p>
+                  <p class="text-white text-xs md:text-base"><i class="fa-solid fa-location-dot"></i> 3801 Florin Rd Unit 120C, Sacramento, California 95823</p>
               </div>
           </div>
       </div>
@@ -28,28 +28,28 @@
                   <img src="./assets/img/logo/logo.png" class="h-8 lg:h-14" alt="Flowbite Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap hidden dark:text-white">Flowbite</span>
               </a>
-              <button onclick="myFunction()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <button onclick="myFunction()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                   <span class="sr-only">Open main menu</span>
                   <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                   </svg>
               </button>
-              <div class="hidden w-full md:block md:w-auto" id="navbar">
-                  <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white lg:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <div class="hidden w-full lg:block lg:w-auto" id="navbar">
+                  <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-white lg:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                       <li>
-                          <a href="index.html" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
+                          <a href="index.html" onclick="myFunction()" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
                       </li>
                       <li>
-                          <a href="index.html#about-us" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
+                          <a href="index.html#about-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
                       </li>
                       <li>
-                          <a href="service.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">SERVICES</a>
+                          <a href="service.html" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">SERVICES</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
+                          <a href="#" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
                       </li>
                       <li>
-                          <a href="index.html#contact-us" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONSTACT US</a>
+                          <a href="service.html#contact-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONTACT US</a>
                       </li>
                   </ul>
               </div>
@@ -367,51 +367,55 @@
     </section>
   </main>
   <footer class="mt-[60px] lg:mt-[240px] bg-[#242424] relative scroll-mt-24" id="contact-us">
-      <div class="container mx-auto px-4 py-10 z-1 relative">
-          <div class="grid grid-cols lg:grid-cols-7 gap-4">
-              <div class="col-span-2 text-white text-center md:text-start">
-                  <p class="text-xl font-bold mb-4">About Company</p>
-                  <p class="text-sm mb-4">We have over 10 years of experience helping customers with car servicing.</p>
-                  <p class="text-sm font-bold mb-3">WE ARE AVAILABLE</p>
-                  <p class="text-sm mb-3">Mon-Sat: 09.00 am to 6.30 pm</p>
-                  <button class="bg-[var(--primary-color)] rounded-xl px-3 py-1 text-sm font-semibold">Contact Us</button>
+    <div class="container mx-auto px-4 py-10 z-1 relative">
+      <div class="grid grid-cols lg:grid-cols-7 gap-4">
+        <div class="lg:col-span-2 text-white text-center md:text-start">
+          <p class="text-xl font-bold mb-4">About Company</p>
+          <p class="text-sm mb-4">We have over 10 years of experience helping customers with car servicing.</p>
+          <p class="text-sm font-bold mb-3">WE ARE AVAILABLE</p>
+          <p class="text-sm mb-3">Mon-Sat: 09.00 am to 6.30 pm</p>
+          <button class="bg-[var(--primary-color)] rounded-xl px-3 py-1 text-sm font-semibold">Contact Us</button>
 
-              </div>
-              <div class="text-white text-center md:text-start">
-                  <p class="text-xl font-bold mb-4">About Company</p>
-                  <a class="text-sm mb-4">About Us</a> <br>
-                  <a class="text-sm mb-4">Services</a><br>
-                  <a class="text-sm mb-4">Vehicle</a><br>
-                  <a class="text-sm mb-4">Contact Us</a><br>
-              </div>
-              <div class="col-span-2 text-white text-center md:text-start">
-                  <p class="text-xl font-bold mb-4">Contact Details</p>
-                  <p class="text-sm font-bold mb-3">PHONE NUMBER</p>
-                      <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-square-phone-hangup text-[var(--primary-color)] me-2"></i> <span>916-450-9838</span></p>
-                  <p class="text-sm font-bold mb-3">EMAIL ADDRESS</p>
-                      <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-envelope text-[var(--primary-color)] me-2"></i> <span>916-450-9838</span></p>
-                  <p class="text-sm font-bold mb-3">OFFICE LOCATION</p>
-                      <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-marker text-[var(--primary-color)] me-2"></i> <span>3801 Florin Rd Unit 120C, Sacramento, California 95823</span></p>
-              </div>
+        </div>
+        <div class="text-white text-center md:text-start">
+          <p class="text-xl font-bold mb-4">About Company</p>
+          <a class="text-sm mb-4">About Us</a> <br>
+          <a class="text-sm mb-4">Services</a><br>
+          <a class="text-sm mb-4">Vehicle</a><br>
+          <a class="text-sm mb-4">Contact Us</a><br>
+        </div>
+        <div class="lg:col-span-2 text-white text-center md:text-start">
+          <p class="text-xl font-bold mb-4">Contact Details</p>
+          <p class="text-sm font-bold mb-3">PHONE NUMBER</p>
+              <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-square-phone-hangup text-[var(--primary-color)] me-2"></i> <span>916-450-9838</span></p>
+          <p class="text-sm font-bold mb-3">EMAIL ADDRESS</p>
+              <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-envelope text-[var(--primary-color)] me-2"></i> <span>916-450-9838</span></p>
+          <p class="text-sm font-bold mb-3">OFFICE LOCATION</p>
+              <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-marker text-[var(--primary-color)] me-2"></i> <span>3801 Florin Rd Unit 120C, Sacramento, California 95823</span></p>
+        </div>
 
-              <div class="col-span-2 text-center md:text-start">
-                  <img src="./assets/img/gallery/2.jpg" class="w-[80%] rounded-md" alt="">
-              </div>
+        <div class="lg:col-span-2 text-center md:text-start">
+          <div class="flex justify-center lg:justify-start">
+            <img src="./assets/img/gallery/2.jpg" class="w-[80%] rounded-md" alt="">
           </div>
+        </div>
+      </div>
+    </div>
 
+    <div>
+      <img src="./assets/img/pattern/2.png" class="absolute top-0 z-0" alt="">
+    </div>
+    <hr>
+    <div class="container mx-auto px-4">
+      <div class="py-3 md:flex md:justify-between">
+        <div class="flex justify-center md:block">
+          <img src="./assets/img/logo/logo.png" class="w-[180px]" alt="">
+        </div>
+        <p class="text-white text-center md:text-start">Copyright  2024. All Rights Reserved.</p>
       </div>
-
-      <div>
-          <img src="./assets/img/pattern/2.png" class="absolute top-0 z-0" alt="">
-      </div>
-      <hr>
-      <div class="container mx-auto px-4">
-          <div class="py-3 md:flex md:justify-between items-center">
-              <img src="./assets/img/logo/logo.png" class="w-[180px]" alt="">
-              <p class="text-white">Copyright  2024. All Rights Reserved.</p>
-          </div>
-      </div>
+    </div>
   </footer>
+  <script src="./assets/JS/fuction.js"></script>
   <script src="./assets/JS/script.js"></script>
   <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </body>

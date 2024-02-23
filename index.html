@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All State Auto Body Repairs</title>
     <link href="./output.css" rel="stylesheet">
-    <link href="./vendor/@flaticon/flaticon-uicons/css/all/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="./assets/JS/fuction.js"></script>
 </head>
@@ -16,8 +16,8 @@
         <div class="bg-[var(--primary-color)]">
             <div class="container mx-auto px-4 py-1">
                 <div class="md:flex block text-center justify-between items-center">
-                    <p class="text-xl font-semibold text-white"><i class="fi fi-ss-phone-call"></i> 916-450-9838</p>
-                    <p class="text-white text-xs md:text-base"><i class="fi fi-sr-marker"></i> 3801 Florin Rd Unit 120C, Sacramento, California 95823</p>
+                    <p class="text-xl font-semibold text-white"><i class="fa-solid fa-phone"></i> 916-450-9838</p>
+                    <p class="text-white text-xs md:text-base"><i class="fa-solid fa-location-dot"></i> 3801 Florin Rd Unit 120C, Sacramento, California 95823</p>
                 </div>
             </div>
         </div>
@@ -28,28 +28,28 @@
                     <img src="./assets/img/logo/logo.png" class="h-8 lg:h-14" alt="Flowbite Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap hidden dark:text-white">Flowbite</span>
                 </a>
-                <button onclick="myFunction()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <button onclick="myFunction()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                     </svg>
                 </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar">
-                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white lg:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <div class="hidden w-full lg:block lg:w-auto" id="navbar">
+                    <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-white lg:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
+                            <a href="#" onclick="myFunction()" class="block py-2 px-3 text-white bg-[var(--primary-color)] rounded md:bg-transparent md:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
                         </li>
                         <li>
-                            <a href="#about-us" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
+                            <a href="#about-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">ABOUT US</a>
                         </li>
                         <li>
-                            <a href="service.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">SERVICES</a>
+                            <a href="service.html" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">SERVICES</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
+                            <a href="#" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)] ">VEHICLES</a>
                         </li>
                         <li>
-                            <a href="#contact-us" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONSTACT US</a>
+                            <a href="#contact-us" onclick="myFunction()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary-color)] md:p-0 dark:text-white md:dark:hover:text-[var(--primary-color)]">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +66,7 @@
                     <div class="text-center text-white">
                         <p class="text-xl lg:text-3xl font-bold">Welcome to All State Auto Body Repaires</p>
                         <p class="text-4xl lg:text-6xl font-bold mb-5">Let your car Be in perfect condition</p>
-                        <button class="bg-[var(--primary-color)] px-6 py-3.5 text-xl font-medium rounded self-center">Contact US <i class="fi fi-rr-arrow-right"></i></button>
+                        <button class="bg-[var(--primary-color)] px-6 py-3.5 text-xl font-medium rounded self-center">Contact US <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                 <img src="./assets/img/pattern/4.png" class="w-[80px] animate-shake animate-infinite animate-duration-[6000ms]" alt="">
             </div>
 
-            <div class="absolute z-[-0]  bottom-[-30%] md:bottom-[25%] left-16">
+            <div class="absolute z-[-0]  bottom-[20%] md:bottom-[25%] left-16">
                 <img src="./assets/img/pattern/5.png" class="w-[20px] animate-shake animate-infinite animate-duration-[6000ms]" alt="">
             </div>
 
@@ -83,11 +83,11 @@
                 <img src="./assets/img/pattern/6.png" class="w-[20px]  animate-spin animate-duration-[11000ms]" alt="">
             </div>
 
-            <div class="absolute z-[-0] bottom-[35%] lg:bottom-[25%] right-[30%]">
+            <div class="absolute z-[-0] bottom-[40%] right-[10%] lg:bottom-[25%] lg:right-[30%] ">
                 <img src="./assets/img/pattern/7.png" class="w-[20px] animate-spin animate-duration-[11000ms]" alt="">
             </div>
 
-            <div class="absolute z-[-0] bottom-[-30%] md:bottom-[-15%] right-[-55%] md:right-[-10%]">
+            <div class="absolute z-[-0] bottom-[-25%] right-[-55%] md:bottom-[-15%] md:right-[-10%]">
                 <img src="./assets/img/pattern/11.png" class="w-[450px] lg:w-[550px] animate-spin animate-duration-[15000ms]" alt="">
             </div>
         </section>
@@ -110,8 +110,8 @@
             </div>
         </section>
 
-        <section class="bg-[var(--primary-color)] pt-20 pb-48 relative scroll-mt-24" id="about-us">
-            <div class="w-full mx-auto px-4 lg:px-0 relative z-[1]">
+        <section class="bg-[var(--primary-color)] pt-20 pb-20 lg:pb-48 relative scroll-mt-24" id="about-us">
+            <div class="w-full mx-auto px-0 relative z-[1]">
 
                 <div class="grid gap-6 grid-cols md:grid-cols-2 justify-items-center items-center">
 
@@ -129,7 +129,7 @@
                         ">We know auto repair, whether it’s an oil change, brakes, suspension, engine, transmission, or even a smog check. Having served the Sacramento area for 10 years, our staff are in touch with your specific needs and wants for your vehicle. Our ASE-Certified technicians have the training and expertise to quickly and affordably perform any and all repairs and factory maintenance your vehicle may need. From a Toyota Camry, RAM, and a Ford Fusion, all makes and models are diagnosed and repaired in a professional manner.</p>
                     </div>
 
-                    <div>
+                    <div class="ps-3 lg:ps-0">
                         <img src="./assets/img/gallery/1.jpg" class="rounded-s-full" alt="">
                     </div>
                 </div>
@@ -169,7 +169,7 @@
             </div>
         </section>
 
-        <section class="bg-white py-36 relative services" id="services">
+        <section class="bg-white pt-20 lg:pt-36 pb-36 relative services" id="services">
             <div class="absolute top-0 left-0">
                 <img src="./assets/img/pattern/bg.png" class="w-full" alt="">
             </div>
@@ -192,7 +192,7 @@
 
                     <div class="text-white text-center">
                         <div class="flex justify-center">
-                            <img src="./assets/img/services/1.png" class="w-[80px] mb-3" alt="">
+                            <img src="./assets/img/services/4.png" class="w-[80px] mb-3" alt="">
                         </div>
                         <p class="text-xl font-bold">DRIVE TRAIN</p>
                         <p>Suspension Transmission Drive Train</p>
@@ -200,7 +200,7 @@
 
                     <div class="text-white text-center">
                         <div class="flex justify-center">
-                            <img src="./assets/img/services/1.png" class="w-[80px] mb-3" alt="">
+                            <img src="./assets/img/services/2.png" class="w-[80px] mb-3" alt="">
                         </div>
                         <p class="text-xl font-bold">A/C REPAIRS</p>
                         <p>A/C System Heating System Cooling System</p>
@@ -208,7 +208,7 @@
 
                     <div class="text-white text-center">
                         <div class="flex justify-center">
-                            <img src="./assets/img/services/1.png" class="w-[80px] mb-3" alt="">
+                            <img src="./assets/img/services/3.png" class="w-[80px] mb-3" alt="">
                         </div>
                         <p class="text-xl font-bold">BRAKES</p>
                         <p>Brake Repair ABS Repair Traction Control</p>
@@ -216,7 +216,7 @@
 
                     <div class="text-white text-center">
                         <div class="flex justify-center">
-                            <img src="./assets/img/services/1.png" class="w-[80px] mb-3" alt="">
+                            <img src="./assets/img/services/5.png" class="w-[80px] mb-3" alt="">
                         </div>
                         <p class="text-xl font-bold">ELECTRICAL</p>
                         <p>Batteries Alternators Starters</p>
@@ -224,10 +224,10 @@
 
                     <div class="text-white text-center">
                         <div class="flex justify-center">
-                            <img src="./assets/img/services/1.png" class="w-[80px] mb-3" alt="">
+                            <img src="./assets/img/services/6.png" class="w-[80px] mb-3" alt="">
                         </div>
-                        <p class="text-xl font-bold">OIL & FLUIDS</p>
-                        <p>Flushes Filter Change Oil Change</p>
+                        <p class="text-xl font-bold">TIRES / WHEELS</p>
+                        <p>Mechanical and Suspension Repairs</p>
                     </div>
                 </div>
 
@@ -244,7 +244,7 @@
    <footer class="mt-[60px] lg:mt-[240px] bg-[#242424] relative scroll-mt-24" id="contact-us">
         <div class="container mx-auto px-4 py-10 z-1 relative">
             <div class="grid grid-cols lg:grid-cols-7 gap-4">
-                <div class="col-span-2 text-white text-center md:text-start">
+                <div class="lg:col-span-2 text-white text-center md:text-start">
                     <p class="text-xl font-bold mb-4">About Company</p>
                     <p class="text-sm mb-4">We have over 10 years of experience helping customers with car servicing.</p>
                     <p class="text-sm font-bold mb-3">WE ARE AVAILABLE</p>
@@ -259,18 +259,20 @@
                     <a class="text-sm mb-4">Vehicle</a><br>
                     <a class="text-sm mb-4">Contact Us</a><br>
                 </div>
-                <div class="col-span-2 text-white text-center md:text-start">
+                <div class="lg:col-span-2 text-white text-center md:text-start">
                     <p class="text-xl font-bold mb-4">Contact Details</p>
                     <p class="text-sm font-bold mb-3">PHONE NUMBER</p>
-                        <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-square-phone-hangup text-[var(--primary-color)] me-2"></i> <span>916-450-9838</span></p>
+                        <p class="ms-4 text-[20px] mb-3"><i class="fa-solid fa-square-phone-flip fa-rotate-90 text-[var(--primary-color)] mb-0 me-2"></i> <span class=" text-sm">916-450-9838</span></p>
                     <p class="text-sm font-bold mb-3">EMAIL ADDRESS</p>
-                        <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-envelope text-[var(--primary-color)] me-2"></i> <span>916-450-9838</span></p>
+                        <p class="ms-4 text-[20px] mb-3"><i class="fa-solid fa-envelope text-[var(--primary-color)] mb-0 me-2"></i> <span class=" text-sm">allstate6520@gmail.com</span></p>
                     <p class="text-sm font-bold mb-3">OFFICE LOCATION</p>
-                        <p class="ms-4 text-sm mb-3"><i class="fi fi-sr-marker text-[var(--primary-color)] me-2"></i> <span>3801 Florin Rd Unit 120C, Sacramento, California 95823</span></p>
+                        <p class="ms-4 text-[20px] mb-3"><i class="fa-solid fa-location-dot text-[var(--primary-color)] mb-0 me-2"></i> <span class=" text-sm">3801 Florin Rd Unit 120C, Sacramento, California 95823</span></p>
                 </div>
 
-                <div class="col-span-2 text-center md:text-start">
-                    <img src="./assets/img/gallery/2.jpg" class="w-[80%] rounded-md" alt="">
+                <div class="lg:col-span-2 text-center md:text-start">
+                    <div class="flex justify-center lg:justify-start">
+                        <img src="./assets/img/gallery/2.jpg" class="w-[80%] rounded-md" alt="">
+                    </div>
                 </div>
             </div>
 
@@ -281,11 +283,14 @@
         </div>
         <hr>
         <div class="container mx-auto px-4">
-            <div class="py-3 md:flex md:justify-between items-center">
-                <img src="./assets/img/logo/logo.png" class="w-[180px]" alt="">
-                <p class="text-white">Copyright  2024. All Rights Reserved.</p>
+            <div class="py-3 md:flex md:justify-between">
+                <div class="flex justify-center md:block">
+                    <img src="./assets/img/logo/logo.png" class="w-[180px]" alt="">
+                </div>
+                <p class="text-white text-center md:text-start">Copyright  2024. All Rights Reserved.</p>
             </div>
         </div>
    </footer>
 </body>
+<script src="./vendor/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </html>
