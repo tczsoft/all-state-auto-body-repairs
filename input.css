@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-    --primary-color: rgb(235,51,0);
+    --primary-color: rgb(202,3,3);
     --secondary-color:#D9D9D9;
 }
 
@@ -97,13 +97,31 @@
 }
 
 .clip-border{
-    clip-path: polygon(49% 1%, 0% 100%, 100% 100%);
-   /* clip-path: polygon(20% 0, 80% 0, 100% 100%, 0% 100%);*/
+  clip-path: polygon(49% 1%, 0% 100%, 100% 100%);
+  /* clip-path: polygon(20% 0, 80% 0, 100% 100%, 0% 100%);*/
 
 }
 
+.scroll-bar-hidden{
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scroll-bar-hidden::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
 
+.warranty{
+  clip-path: polygon(0 0, 100% 0, 90% 49%, 100% 100%, 0 100%, 10% 49%);
+}
+
+.offer{
+  clip-path: polygon(0 0, 100% 0%, 85% 50%, 100% 100%, 0 100%);
+}
+
+.offer-right{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 15% 50%);
+}
 
 .background{
-    background: linear-gradient(rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.708)),url('./assets/images/services-2.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.708)),url('./assets/images/services-2.png');
 }
