@@ -29,15 +29,13 @@
         <meta name="twitter:image" content="http://127.0.0.1:5500/assets/img/logo/logo.png">
     </head>
     <body>
-
         <!--Header-->
-
         <header class=" bg-black lg:bg-transparent fixed z-20 top-0 w-full">
             <div class="bg-primary-color">
                 <div class="m-w-[80rem] mx-auto px-4 lg:px-16 py-1">
                     <div class=" grid grid-cols-1 lg:grid-cols-3 text-center ">
-                        <a href="index.html" class="hidden lg:block items-center space-x-3 rtl:space-x-reverse lg:absolute top-0 bg-black p-6 rounded-b-lg">
-                            <img src="./assets/img/logo/logo.png" class="h-8 lg:h-10 xl:h-14" alt="Flowbite Logo" />
+                        <a href="index.html" role="button" class="hidden lg:block items-center space-x-3 rtl:space-x-reverse lg:absolute top-0 z-[2] bg-black p-6 rounded-b-lg">
+                            <img src="./assets/img/logo/logo.png" class="h-8 lg:h-10 xl:h-14" alt="Logo" />
                          </a>
                         <div></div>
                         <p class="text-xl font-semibold text-white text-center"><i class="fa-solid fa-phone"></i> 916-450-9838</p>
@@ -46,10 +44,10 @@
                 </div>
             </div>
     
-            <nav class="border-gray-200 dark:bg-gray-900 bg-clip-border">
+            <nav class="border-gray-200 dark:bg-black bg-clip-border">
                 <div class="container flex flex-wrap items-center justify-between mx-auto px-4 py-2 lg:py-0 z-1 relative">
                     <a href="index.html" class="lg:hidden flex items-center space-x-3 rtl:space-x-reverse lg:absolute top-0 bg-black p-3 lg:p-6 rounded-b-lg">
-                        <img src="./assets/img/logo/logo.png" class="h-8 lg:h-10" alt="Flowbite Logo" />
+                        <img src="./assets/img/logo/logo.png" class="h-8 lg:h-10" alt="Logo" />
                     </a>
                     <div> </div>
                     <button onclick="myFunction()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -131,6 +129,7 @@
 
         <!--Main-->
         <main>
+            <a href="tel:916-450-9838" class="fixed bottom-14 rounded-full bg-primary-color text-3xl z-20 left-10 py-4 px-5 text-white"><i class="fa-solid fa-phone-volume"></i></a>
             <section class="bg-no-repeat text-animation background">
                 <div class="max-w-[85rem] mx-auto px-16 pt-28">
                     <div class="min-h-[30vh] flex items-center">
@@ -574,7 +573,7 @@
                         <p class="mb-2"><a href="index.html#about-us">About Us</a></p>
                         <p class="mb-2"><a href="service.html">Services</a></p>
                         <p class="mb-2"><a href="vehicles.html">Vehicle</a> </p>
-                        <p class="mb-2"><a href="vehicles.html#contact-us">Contact Us</a> </p>
+                        <p class="mb-2"><a onclick="myModel()" role="button">Contact Us</a> </p>
                     </div>
                     <div class="lg:col-span-2 text-white text-center md:text-start">
                         <p class="text-2xl font-bold mb-4">Contact Details</p>
@@ -587,8 +586,11 @@
                     </div>
     
                     <div class="lg:col-span-2 text-center md:text-start">
-                        <div class="flex justify-center lg:justify-start">
-                            <img src="./assets/img/gallery/Footer.jpg" class="w-[70%] rounded-md" alt="">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="./assets/img/gallery/4.jpg" class="w-full rounded-md" alt="">
+                            <img src="./assets/img/gallery/1.jpg" class="w-full rounded-md" alt="">
+                            <img src="./assets/img/gallery/2.jpg" class="w-full rounded-md" alt="">
+                            <img src="./assets/img/gallery/3.jpeg" class="w-full rounded-md" alt="">
                         </div>
                     </div>
                 </div>
@@ -615,8 +617,8 @@
                 <!-- Modal content -->
                 <div class="relative bg-white rounded-lg shadow">
                     <!-- Modal header -->
-                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                        <h3 class="text-xl font-semibold text-gray-900">
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t bg-primary-color">
+                        <h3 class="text-xl font-semibold text-white">
                             Contact
                         </h3>
                         <button onclick="myModel()" type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center " data-modal-hide="authentication-modal">
@@ -627,23 +629,30 @@
                         </button>
                     </div>
                     <!-- Modal body -->
-                    <div class="p-4 md:p-5">
-                        <p class="text-sm font-bold mb-3">PHONE NUMBER</p>
-                            <p class="ms-4 text-[20px] mb-3"><i class="fa-solid fa-square-phone-flip fa-rotate-90 text-[var(--primary-color)] mb-0 me-2"></i> <span class=" text-sm">916-450-9838</span></p>
-                        <p class="text-sm font-bold mb-3">EMAIL ADDRESS</p>
-                            <p class="ms-4 text-[20px] mb-3"><i class="fa-solid fa-envelope text-[var(--primary-color)] mb-0 me-2"></i> <span class=" text-sm">allstate6520@gmail.com</span></p>
-                        <p class="text-sm font-bold mb-3">OFFICE LOCATION</p>
-                            <p class="ms-4 text-[20px] mb-3"><i class="fa-solid fa-location-dot text-[var(--primary-color)] mb-0 me-2"></i> <span class=" text-sm">3801 Florin Rd Unit 120C, Sacramento, California 95823</span></p>
+                    <div class="p-4 md:p-5 relative group">
+                        <div class="relative z-[2]">
+                            <p class="font-bold mb-3">PHONE NUMBER</p>
+                            <p class="text-[25px] mb-3"><i class="fa-solid fa-square-phone-flip fa-rotate-90 text-primary-color mb-0 me-2"></i> <span class=" text-base">916-450-9838</span></p>
+                            <p class="font-bold mb-3">EMAIL ADDRESS</p>
+                            <p class="text-[25px] mb-3"><i class="fa-solid fa-envelope text-primary-color mb-0 me-2"></i> <span class=" text-base">allstate6520@gmail.com</span></p>
+                            <p class="font-bold mb-3">OFFICE LOCATION</p>
+                            <p class="text-[25px] mb-3"><i class="fa-solid fa-location-dot text-primary-color mb-0 me-2"></i> <span class=" text-base">3801 Florin Rd Unit 120C, Sacramento, California 95823</span></p>
+                            <div class="p-3 flex justify-center">
+                                <button onclick="myModel()" class="bg-primary-color p-2 rounded-md text-white font-semibold">Close</button>
+                            </div>
+                        </div>
+                        
+    
+                        <div class="absolute top-0 left-0 w-full h-full bg-opacity-20 z-[0] bg-primary-color ">
+                        </div>
+                        <p class="text-[250px] absolute top-0 left-20 opacity-5 z-[1] text-primary-color group-hover:text-white group-hover:opacity-20 group-hover:animate-jump-in animate-duration-1000"><i class="fa-solid fa-phone-volume"></i></p>
                     </div>
-
-                    <div class="p-3 flex justify-center">
-                        <button onclick="myModel()" class="bg-primary-color p-2 rounded-md text-white font-semibold">Close</button>
-                    </div>
+    
                 </div>
             </div>
         </div>
     </body>
 
     <script src="./assets/JS/fuction.js"></script>
-    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="./vendor/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </html>

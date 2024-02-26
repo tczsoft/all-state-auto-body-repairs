@@ -14,7 +14,7 @@
 }
 
 .slider{
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 46% 100%);
+    clip-path: polygon(55% 0, 100% 0, 100% 100%, 46% 100%);
 }
 
 .slider-2{
@@ -122,6 +122,28 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 15% 50%);
 }
 
+.right-slid{
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0% 100%);
+}
+
 .background{
   background: linear-gradient(rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.708)),url('./assets/images/services-2.png');
+}
+
+/*swipper*/
+.swiper {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }

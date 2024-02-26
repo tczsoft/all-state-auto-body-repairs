@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="./assets/JS/fuction.js"></script>
-
+    <link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="-1">
@@ -38,13 +37,13 @@
     <meta name="twitter:image" content="http://127.0.0.1:5500/assets/img/logo/logo.png">
 
 </head>
-<body>
+<body class="overflow-x-hidden">
     <header class=" bg-black lg:bg-transparent fixed z-20 top-0 w-full">
         <div class="bg-primary-color">
             <div class="m-w-[80rem] mx-auto px-4 lg:px-16 py-1">
                 <div class=" grid grid-cols-1 lg:grid-cols-3 text-center ">
-                    <a href="index.html" class="hidden lg:block items-center space-x-3 rtl:space-x-reverse lg:absolute top-0 bg-black p-6 rounded-b-lg">
-                        <img src="./assets/img/logo/logo.png" class="h-8 lg:h-10 xl:h-14" alt="Flowbite Logo" />
+                    <a href="index.html" role="button" class="hidden lg:block items-center space-x-3 rtl:space-x-reverse lg:absolute top-0 z-[2] bg-black p-6 rounded-b-lg">
+                        <img src="./assets/img/logo/logo.png" class="h-8 lg:h-10 xl:h-14" alt="Logo" />
                      </a>
                     <div></div>
                     <p class="text-xl font-semibold text-white text-center"><i class="fa-solid fa-phone"></i> 916-450-9838</p>
@@ -53,10 +52,10 @@
             </div>
         </div>
 
-        <nav class="border-gray-200 dark:bg-gray-900 bg-clip-border">
+        <nav class="border-gray-200 dark:bg-black bg-clip-border">
             <div class="container flex flex-wrap items-center justify-between mx-auto px-4 py-2 lg:py-0 z-1 relative">
                 <a href="index.html" class="lg:hidden flex items-center space-x-3 rtl:space-x-reverse lg:absolute top-0 bg-black p-3 lg:p-6 rounded-b-lg">
-                    <img src="./assets/img/logo/logo.png" class="h-8 lg:h-10" alt="Flowbite Logo" />
+                    <img src="./assets/img/logo/logo.png" class="h-8 lg:h-10" alt="Logo" />
                 </a>
                 <div> </div>
                 <button onclick="myFunction()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -91,7 +90,8 @@
         </nav>
     </header>
     <main>
-        <a href="tel:916-450-9838" class="fixed bottom-36 rounded-full bg-blue-400 text-3xl z-20 left-10 py-4 px-5 text-white"><i class="fa-solid fa-phone-volume"></i></a>
+        <a href="tel:916-450-9838" class="fixed bottom-14 rounded-full bg-primary-color text-3xl z-20 left-10 py-4 px-5 text-white"><i class="fa-solid fa-phone-volume"></i></a>
+
         <section id="hero-section" class="relative overflow-hidden hero-section">
             <div class="max-w-[110rem] w-full mx-auto px-4 lg:px-6 relative z-[1]">
                 <div class="grid gap-12 grid-cols min-h-[100vh] justify-items-center items-center">
@@ -108,13 +108,61 @@
             </div>
         </section>
 
-        <section class="bg-white py-16 relative overflow-hidden">
+        <!--Body Painting-->
+        <section class="bg-primary-color py-14 relative">
+            <div class="w-full mx-auto px-3 lg:px-36 ">
+
+                <div class="grid gap-6 grid-cols-1 md:grid-cols-2 items-center justify-center">
+                    <div class="">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper rounded-md">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./assets/img/body/b.jpg" class="w-full" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/img/body/c.jpg" class="w-full" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/img/body/d.jpg" class="w-full" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/img/body/e.jpg" class="w-full" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/img/body/f.jpg" class="w-full" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/img/body/g.jpg" class="w-full" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/img/body/h.jpg" class="w-full" alt="">
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="lg:text-black text-white relative z-[2]">
+                        <div class="ps-0 lg:ps-16">
+                            <p class="text-2xl lg:text-4xl font-bold mb-3">ALL STATE AUTO BODY REPAIR</p>
+                            <p class="text-base lg:text-xl mb-6 text-justify">We provide top-notch auto body repair and restoration services. Our experienced team can handle various car repairs, from minor dents to major collision damage. With our attention to detail and quality craftsmanship, we'll have your car looking as good as new. Trust us to get your ride back on the road in no time!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider animate-fade-left animate-duration-[2000ms] bg-white h-full w-full top-0 z-[1] absolute lg:block hidden">
+            </div>
+        </section>
+
+        <section class="bg-white py-14 relative overflow-hidden">
             <div class="max-w-[110rem] w-full mx-auto px-4 lg:px-6 relative z-[2]">
                 <div class="grid gap-12 grid-cols-1 md:grid-cols-2 justify-items-center items-center">
-                    <div class="">
-                        <img src="./assets/img/pattern/star.png" class="h-20" alt="">
+                    <div class=" ">
+                        <img src="./assets/img/pattern/star.png" class="h-32" alt="">
                         <div class="flex items-center justify-center warranty bg-primary-color text-white pb-2 border-double border-4 border-white">
-                            <p class="text-7xl font-bold me-2">36</p>
+                            <p class="text-8xl font-bold me-2">36</p>
                             <div class="text-xl">
                                 <i class="">Month</i> <br> <span class="font-bold">K</span> MILE
                             </div>
@@ -125,13 +173,13 @@
                     </div>
 
                     <div class="text-center">
-                        <div class="block md:flex items-center mb-4">
-                            <p class="text-4xl font-bold text-white offer bg-primary-color border-double border-4 border-white ps-3 py-3 pe-8">10% off!</p>
-                            <p class="text-xl">on your first selected repairs</p>
+                        <div class="flex items-center mb-4">
+                            <p class="text-xl md:text-5xl font-bold text-white offer bg-primary-color border-double border-4 border-white ps-3 py-3 pe-8">10% off!</p>
+                            <p class="text-base md:text-2xl font-semibold">ON YOUR FIRST <br> SELECTED REPAIRS</p>
                         </div>
-                        <div class="block md:flex items-center">
-                            <p class="text-xl">on your first body repairs</p>
-                            <p class="text-4xl font-bold  text-white offer-right bg-primary-color border-double border-4 border-white pe-3 py-3 ps-8">20% off!</p>
+                        <div class="flex items-center">
+                            <p class="text-base md:text-2xl font-semibold">ON YOUR FIRST <br> BODY REPAIRS</p>
+                            <p class="text-xl md:text-5xl font-bold  text-white offer-right bg-primary-color border-double border-4 border-white pe-3 py-3 ps-8">20% off!</p>
                         </div>
                     </div>
 
@@ -155,9 +203,7 @@
                         <p class="text-xl mb-6">10 YEARS OF AUTO REPAIRS AND BODY SHOP IN SACRAMENTO</p>
 
                         <p class="text-base mb-6 text-justify">Your car takes you from home to work, to soccer practice, music lessons, and home. It takes you on weekend trips, cross-country excursions, or just to the corner store. Don’t let your vehicle maintenance and auto repairs cramp your lifestyle. Bring it to Precision Automotive Service in Sacramento for all your car, truck, suv, van, and fleet auto repairs and service needs.</p>
-                        <p class=" text-justify
-                        
-                        ">We know auto repair, whether it’s an oil change, brakes, suspension, engine, transmission, or even a smog check. Having served the Sacramento area for 10 years, our staff are in touch with your specific needs and wants for your vehicle. Our ASE-Certified technicians have the training and expertise to quickly and affordably perform any and all repairs and factory maintenance your vehicle may need. From a Toyota Camry, RAM, and a Ford Fusion, all makes and models are diagnosed and repaired in a professional manner.</p>
+                        <p class="text-justify">We know auto repair, whether it’s an oil change, brakes, suspension, engine, transmission, or even a smog check. Having served the Sacramento area for 10 years, our staff are in touch with your specific needs and wants for your vehicle. Our ASE-Certified technicians have the training and expertise to quickly and affordably perform any and all repairs and factory maintenance your vehicle may need. From a Toyota Camry, RAM, and a Ford Fusion, all makes and models are diagnosed and repaired in a professional manner.</p>
                     </div>
 
                     <div class="ps-3 lg:ps-0">
@@ -175,28 +221,28 @@
                 <div class="flex justify-center mb-8">
                     <div>
                         <p class="text-xl italic">Why choose</p>
-                        <p class="text-3xl font-semibold">ALL STATE AUTO BODY REPAIR?</p>
+                        <p class="text-3xl font-semibold lg:text-4xl lg:font-bold">ALL STATE AUTO BODY REPAIR?</p>
                     </div>
                 </div>
                 <div class="grid gap-12 grid-cols md:grid-cols-2 justify-items-stretch items-center">
                     <div class="flex justify-center relative">
-                        <img src="./assets/img/gallery/2.jpg" class="w-full will lg:w-[65%] rounded-ss-2xl rounded-br-2xl outline outline-offset-2 outline-2 outline-[var(--primary-color)]" alt="">
-                        <div class="absolute bottom-0 left-0 z-[-1]">
-                            <img src="./assets/img/pattern/8.png" class="w-[80%]" alt="">
+                        <img src="./assets/img/gallery/auto1.png" class="w-full will lg:w-[65%]" alt="">
+                        <div class="absolute bottom-0 left-[-20%] z-[-1]">
+                            <img src="./assets/img/pattern/8.png" class="w-[90%]" alt="">
                         </div>
                     </div>
                     <div class="justify-self-center md:justify-self-start">
                         <div class="flex items-center mb-8">
                             <img src="./assets/img/pattern/c3.png" class="w-[60px] me-4" alt="">
-                            <p class="text-xl">3 YEAR/36,000 MILE WARRANTY</p>
+                            <p class="text-xl lg:text-2xl">3 YEAR/36,000 MILE WARRANTY</p>
                         </div>
                         <div class="flex items-center mb-8">
                             <img src="./assets/img/pattern/c1.png" class="w-[60px] me-4" alt="">
-                            <p class="text-xl">ASE-CERTIFIED MASTER TECHNICIANS</p>
+                            <p class="text-xl lg:text-2xl">ASE-CERTIFIED MASTER TECHNICIANS</p>
                         </div>
                         <div class="flex items-center mb-4">
                             <img src="./assets/img/pattern/c2.png" class="w-[60px] me-4" alt="">
-                            <p class="text-xl">COUNTLESS 5-STAR REVIEWS</p>
+                            <p class="text-xl lg:text-2xl">COUNTLESS 5-STAR REVIEWS</p>
                         </div>
                     </div>
 
@@ -292,7 +338,7 @@
                     <p class="mb-2"><a href="index.html#about-us">About Us</a></p>
                     <p class="mb-2"><a href="service.html">Services</a></p>
                     <p class="mb-2"><a href="vehicles.html">Vehicle</a> </p>
-                    <p class="mb-2"><a href="index.html#contact-us">Contact Us</a> </p>
+                    <p class="mb-2"><a onclick="myModel()" role="button">Contact Us</a> </p>
                 </div>
                 <div class="lg:col-span-2 text-white text-center md:text-start">
                     <p class="text-2xl font-bold mb-4">Contact Details</p>
@@ -305,8 +351,11 @@
                 </div>
 
                 <div class="lg:col-span-2 text-center md:text-start">
-                    <div class="flex justify-center lg:justify-start">
-                        <img src="./assets/img/gallery/Footer.jpg" class="w-[70%] rounded-md" alt="">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="./assets/img/gallery/4.jpg" class="w-full rounded-md" alt="">
+                        <img src="./assets/img/gallery/1.jpg" class="w-full rounded-md" alt="">
+                        <img src="./assets/img/gallery/2.jpg" class="w-full rounded-md" alt="">
+                        <img src="./assets/img/gallery/3.jpeg" class="w-full rounded-md" alt="">
                     </div>
                 </div>
             </div>
@@ -326,6 +375,52 @@
             </div>
         </div>
     </footer>
+
+    <!-- Contact modal -->
+    <div id="contactModel" class="animate-jump-in animate-once animate-delay-[5000ms] flex overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-4xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t bg-primary-color">
+                    <h3 class="text-xl lg:text-3xl font-semibold text-white"> Get $10 Off Your Next Service! </h3>
+                    <button onclick="contactModel()" type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center " data-modal-hide="authentication-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 relative group">
+                    <div class="relative z-[2]">
+
+                        <form id="form" onsubmit="return false">
+                            <p class="font-bold text-xl mb-3">Personal Information</p>
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-3">
+                                <input type="text" name="First_Name" id="First_Name" placeholder="First Name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                                <input type="text" name="Last_Name" id="Last_Name" placeholder="Last Name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                                <input type="text" name="Phone" id="Phone" placeholder="Phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                            </div>
+                            <p class="font-bold text-xl mb-3">Vehicle Information</p>
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-3">
+                                <input type="text" name="Brand" id="Brand" placeholder="Brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                                <input type="text" name="Model" id="Model" placeholder="Model" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                                <input type="text" name="Year" id="Year" placeholder="Year" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                            </div>
+                            <div class="p-3 flex justify-center items-center">
+                                <button type="submit" onclick="contactSubmit()" class="bg-primary-color p-2 rounded-md text-white font-semibold">Send <i class="fa-regular fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+
+                    </div>
+                    
+                    <div class="absolute top-0 left-0 w-full h-full bg-opacity-20 z-[0] bg-primary-color "> </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Main modal -->
     <div id="modal" class="hidden flex overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
@@ -359,7 +454,6 @@
                     </div>
                     
 
-
                     <div class="absolute top-0 left-0 w-full h-full bg-opacity-20 z-[0] bg-primary-color ">
                     </div>
                     <p class="text-[250px] absolute top-0 left-20 opacity-5 z-[1] text-primary-color group-hover:text-white group-hover:opacity-20 group-hover:animate-jump-in animate-duration-1000"><i class="fa-solid fa-phone-volume"></i></p>
@@ -369,7 +463,29 @@
         </div>
     </div>
 </body>
+
+
 <script src="./vendor/@fortawesome/fontawesome-free/js/all.min.js"></script>
+<script src="./assets/JS/fuction.js"></script>
+<script src="./vendor/swiper/swiper-bundle.min.js" ></script>
+<script>
 
+    var swiper = new Swiper(".mySwiper", {
 
+      loop: true,
+      autoplay : true,
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+</script>
 </html>
