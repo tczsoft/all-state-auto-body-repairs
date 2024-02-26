@@ -147,3 +147,8 @@
   display: block;
   width: 100%;
 }
+
+.active {
+  background-color: #EB3300; 
+  color: white;
+}
